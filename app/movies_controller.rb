@@ -24,13 +24,14 @@ def can_be_created_with_a_hash_of_attributes
         director: "George Roy Hill",lead: "Paul Newman",in_theaters: false)
 end
 
-def can_be_created_in_a_block(args = )
+def can_be_created_in_a_block(title = "Home Alone",release_date = 1990  )
   # If no arguments are passed, use default values:
   # title == "Home Alone"
   # release_date == 1990
 
   Movie.create do |m|
-    __
+    m.title = title
+    m.elease_date = elease_date
   end
 end
 
